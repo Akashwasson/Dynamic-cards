@@ -1,11 +1,4 @@
 
-    localStorage.setItem('num',3); // for login page
-    var localval=localStorage.getItem('key');
-    function cardfun(){
-      if(localval == null){
-      window.location.href='loginpage.html';
-   } }
-    cardfun();
 
   var btn = document.getElementById("btn");
   btn.onclick = function() {
@@ -24,7 +17,7 @@
     localStorage.setItem('students' ,JSON.stringify(students));               
     var localval=JSON.parse(localStorage.getItem('students'))   
     var datad = localval.filter(item => item.id === myvalue).map(item => item.name);          
-    var y= document.getElementById("recalledtext"+myvalue).innerHTML= DOMMatrixReadOnly;                             
+    var y= document.getElementById("recalledtext"+myvalue).innerHTML= datad;                             
   }
   
   function myFunction(xyz) {
